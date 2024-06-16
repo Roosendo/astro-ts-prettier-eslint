@@ -21,11 +21,11 @@ To use this package, you need to have Node.js installed. Then, execute the packa
 > [!NOTE]
 > npm
 ```bash
-npx astro-ts-prettier-eslint
+npx astro-ts-prettier-eslint@latest
 ```
 
 > [!NOTE]
 > pnpm
 ```bash
-pnpx astro-ts-prettier-eslint
+pnpx astro-ts-prettier-eslint@latest
 ```
