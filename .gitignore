@@ -1,0 +1,5 @@
+# dependencies
+node_modules/
+
+# some files that are not needed in the repo
+pnpm-lock.yaml

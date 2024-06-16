@@ -1,0 +1,37 @@
+{
+  "name": "astro-ts-prettier-eslint",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/setup-config.js",
+  "scripts": {
+    "build": "tsc",
+    "setup": "node src/setup-config.js"
+  },
+  "keywords": [
+    "astro",
+    "typescript",
+    "prettier",
+    "eslint",
+    "ts-standard",
+    "tailwindcss"
+  ],
+  "author": "Rosendo Garcia",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/parser": "5.62.0",
+    "eslint": "8.57.0",
+    "eslint-config-ts-standard": "1.0.5",
+    "eslint-plugin-astro": "1.2.2",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "prettier": "3.3.2",
+    "prettier-config-standard": "7.0.0",
+    "prettier-plugin-astro": "0.14.0",
+    "prettier-plugin-tailwindcss": "0.6.4",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "20.14.2",
+    "inquirer": "^9.2.23"
+  }
+}
