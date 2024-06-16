@@ -22,8 +22,9 @@
     "allowJs": true,
     "jsx": "preserve",
     "strict": true,
-    "baseUrl": ".",
-    "outDir": "src",
+    "baseUrl": "./",
+    "outDir": "./src",
     "rootDir": "./"
-  }
+  },
+  "exclude": ["node_modules", "./prettier.config.cjs", "./eslintrc.cjs"]
 }
