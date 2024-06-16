@@ -5,6 +5,20 @@ import path from 'path'
 import inquirer from 'inquirer'
 import { execSync } from 'child_process'
 
+const settingsVSCode = `{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}`
+
 const eslintConfig = `/** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: ['plugin:astro/recommended', 'ts-standard'],
@@ -107,7 +121,10 @@ const main = async () => {
   }
 
   if (answers.installDeps) {
-    fs.writeFileSync(path.join(process.cwd(), 'eslintrc.cjs'), eslintConfig)
+    const vscodeDir = path.join(process.cwd(), '.vscode')
+    if (!fs.existsSync(vscodeDir)) fs.mkdirSync(vscodeDir)
+    fs.writeFileSync(path.join(vscodeDir, 'settings.json'), settingsVSCode)
+    fs.writeFileSync(path.join(process.cwd(), '.eslintrc.cjs'), eslintConfig)
     fs.writeFileSync(path.join(process.cwd(), '.prettierignore'), prettierIgnore)
     fs.writeFileSync(path.join(process.cwd(), '.prettierrc'), prettierConfig)
     fs.writeFileSync(path.join(process.cwd(), 'prettier.config.cjs'), prettierConfigCJS)

@@ -26,5 +26,5 @@
     "outDir": "./src",
     "rootDir": "./"
   },
-  "exclude": ["node_modules", "./prettier.config.cjs", "./eslintrc.cjs"]
+  "exclude": ["prettier.config.cjs"]
 }
