@@ -7,6 +7,9 @@
     "build": "tsc",
     "setup": "node src/setup-config.js"
   },
+  "bin": {
+    "astro-ts-prettier-eslint": "src/setup-config.js"
+  },
   "keywords": [
     "astro",
     "typescript",
@@ -16,7 +19,6 @@
     "tailwindcss"
   ],
   "author": "Rosendo Garcia",
-  "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.57.0",
