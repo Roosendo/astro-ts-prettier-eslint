@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/astro-ts-prettier-eslint.svg)](https://badge.fury.io/js/astro-ts-prettier-eslint)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/npm/dt/astro-ts-prettier-eslint.svg)](https://www.npmjs.com/package/astro-ts-prettier-eslint)
 
 A configuration package for Astro projects using TypeScript, Prettier, ESLint, and TailwindCSS. This package sets up your project with best practices and required dependencies to ensure your code is clean and consistent.
 
