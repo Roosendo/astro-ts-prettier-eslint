@@ -70,15 +70,16 @@ module.exports = {
 }
 `;
 const dependencies = [
-    '@typescript-eslint/parser@5.62.0',
+    '@typescript-eslint/parser@7.13.1',
     'eslint@8.57.0',
     'eslint-config-ts-standard@1.0.5',
     'eslint-plugin-astro@1.2.2',
-    'eslint-plugin-jsx-a11y@6.8.0',
+    'eslint-plugin-jsx-a11y@6.9.0',
     'prettier@3.3.2',
     'prettier-config-standard@7.0.0',
     'prettier-plugin-astro@0.14.0',
-    'prettier-plugin-tailwindcss@0.6.4'
+    'prettier-plugin-tailwindcss@0.6.5',
+    'typescript@5.4.5'
 ];
 const main = async () => {
     const answers = await inquirer.prompt([
