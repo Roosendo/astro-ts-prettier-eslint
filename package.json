@@ -1,6 +1,6 @@
 {
   "name": "astro-ts-prettier-eslint",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A configuration package for Astro projects using TypeScript, Prettier, ESLint, and TailwindCSS. It sets up your project with best practices and required dependencies.",
   "main": "src/setup-config.js",
   "scripts": {
